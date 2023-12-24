@@ -1,27 +1,99 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{ 
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+.menu-bar
+{
+background:#029292;
+text-align: center;
+text-decoration: none;
+font-size: small;
+}
+.menu-bar ul
+{
+display: inline-flex;
+list-style: none;
+color: #fff;
+text-decoration: none;
+}
+.menu-bar ul li
+{
+  width: 180px;
+  margin: 7px;
+  padding: 10px;
+}
+.menu-bar ul li
+{
+  text-decoration: none;
+  color: #fff;
+}
+.menu-bar ul li:hover
+{
+background: #2bab0d;
+border-radius: 2px;
+text-decoration: none;
+}
+.sub-menu-1
+{
+  display: none;
+  color: white;
+  text-decoration: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+   display: block;
+   position: absolute;
+   background: rgb(0,100,0);
+   margin-top: 8px;
+   margin-left: -10px;
+   text-decoration: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+  display: block;
+  margin: 7px;
+  text-decoration: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+  width: 150px;
+  padding: 8px ;
+  border-bottom: 1px;
+  text-decoration: none;
+}
+.container{
+  
+  text-align: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* styles/Table.module.css */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
